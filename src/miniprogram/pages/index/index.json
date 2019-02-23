@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "live-player": "plugin://my-plugin/live-player"
+  }
+}

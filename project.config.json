@@ -1,0 +1,11 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"pluginRoot": "plugin/",
+	"compileType": "plugin",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "YOUR-PLUGIN-APPID",
+	"projectname": "mini-loader-plugin-demo",
+	"condition": {}
+}

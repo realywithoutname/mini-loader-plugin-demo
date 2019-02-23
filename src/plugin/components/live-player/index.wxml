@@ -1,0 +1,21 @@
+<live-player
+  class="live-player"
+  src="{{ src }}"
+  mode="{{ mode }}"
+  muted="{{ muted }}"
+  autoplay="{{ autoplay }}"
+  min-cache="{{ minCache }}"
+  max-cache="{{ maxCache }}"
+  sound-mode="{{ soundMode }}"
+  object-fit="{{ objectFit }}"
+  orientation="{{ orientation }}"
+  background-mute="{{ backgroundMute }}"
+  auto-pause-if-navigate="{{ autoPauseIfNavigate }}"
+  auto-pause-if-open-native="{{ autoPauseIfOpenNative }}"
+
+  bindstatechange="onStateChange"
+  bindnetstatus="onNetStatusChange"
+  bindfullscreenchange="onFullscreenChange"
+>
+  <slot />
+</live-player>

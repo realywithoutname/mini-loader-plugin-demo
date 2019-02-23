@@ -1,0 +1,6 @@
+{
+  "publicComponents": {
+    "live-player": "components/live-player/index"
+  },
+  "main": "index.js"
+}
