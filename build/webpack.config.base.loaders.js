@@ -38,7 +38,12 @@ module.exports = [
     test: /\.scss$/,
     use: [
       fileLoader('[path][name].wxss'),
-      'sass-loader'
+      {
+        loader: 'sass-loader',
+        options: {
+          implementation: require('sass')
+        }
+      }
     ]
   },
   {
@@ -60,7 +65,6 @@ module.exports = [
     type: 'javascript/auto',
     use: [
       fileLoader('[path][name].[ext]'),
-      'mini-program-webpack-loader'
     ]
   },
   {

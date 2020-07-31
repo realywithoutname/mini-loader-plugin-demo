@@ -3,7 +3,7 @@ const merge = require('webpack-merge');
 const MiniProgramPlugin = require('mini-program-webpack-loader').plugin;
 
 const resolve = (file) => path.resolve(__dirname, '../', file);
-global.context = resolve('src/miniprogram')
+global.context = resolve('src/miniprogram');
 
 const baseConfig = require('./webpack.config.base');
 
@@ -15,7 +15,9 @@ module.exports = merge(baseConfig, {
     path: resolve('dist/miniprogram')
   },
   plugins: [
-    new MiniProgramPlugin()
+    new MiniProgramPlugin({
+      extfile: false
+    })
   ]
 });
 

@@ -16,17 +16,18 @@ module.exports = [merge(baseConfig, {
   },
   plugins: [
     new MiniProgramPlugin({
-      forPlugin: true
+      forPlugin: true,
+      extfile: false
     }),
     new CopyWebpackPlugin([
       {
         from: resolve('doc'),
         to: resolve('dist/doc')
       },
-      {
-        from: resolve('project.config.json'),
-        to: resolve('dist/project.config.json')
-      }
+      // {
+      //   from: resolve('project.config.json'),
+      //   to: resolve('dist/project.config.json')
+      // }
     ])
   ]
 }), merge(baseConfig, {
